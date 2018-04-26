@@ -1,0 +1,74 @@
+
+@font-face {
+    font-family: 'pnc_sans_regularregular';
+    src: url('../fonts/pncsans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/pncsans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pnc_sans_boldbold';
+    src: url('../fonts/pncsans-bold-webfont.woff2') format('woff2'),
+         url('../fonts/pncsans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pnc_sanslight';
+    src: url('../fonts/pncsans-light-webfont.woff2') format('woff2'),
+         url('../fonts/pncsans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pnc_sansmedium';
+    src: url('../fonts/pncsans-medium-webfont.woff2') format('woff2'),
+         url('../fonts/pncsans-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+$font-reg: 'pnc_sans_regularregular', sans-serif;
+$font-light: 'pnc_sanslight', sans-derif;
+$font-med: 'pnc_sansmedium', sans-serif;
+$font-bold: 'pnc_sans_boldbold', sans-serif;
+
+$body-font-color: #454e5c;
+
+$h1-size: 33px;
+
+//colors
+
+$gray: #939598;//input border-color
+$gray2: #f0f1f1;
+$gray3: #5b6771; //footer
+$orange: #f15f24;
+$orange2: #f58025;
+$blue: #005288;
+
+
+@mixin body-font{ 
+	color: $body-font-color;
+	font-family: $body-font;
+	font-size: 14px;
+	font-weight: normal;
+	webkit-font-smoothing: smooth;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@mixin transition ($value) {
+     -moz-transition: $value;
+       -o-transition: $value;
+      -ms-transition: $value;
+  -webkit-transition: $value;
+          transition: $value;
+}

@@ -1,0 +1,356 @@
+html {
+  height: 100%;
+}
+
+body.pnc {
+    min-height: 100%;
+    font-family: $font-reg;
+	
+    .pnc-container,
+    footer .row {
+        width: 100%;
+    }
+
+    main.container-fluid {
+    	padding: 0;
+
+		.row.holder {
+            background: #f15f24; /* Old browsers */
+            background: -moz-linear-gradient(top, #f15f24 0%, #f58025 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, #f15f24 0%,#f58025 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, #f15f24 0%,#f58025 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f15f24', endColorstr='#f58025',GradientType=0 ); /* IE6-9 */
+	    } 
+
+    	.one {
+        	padding: 0;
+        	background: none;
+
+        	div {
+        		padding: 0;
+        	}
+        }
+
+        .holder {
+
+                .pnc-container {
+                    margin: 8em auto 0;
+                    float: none;
+                    max-width: 775px;
+
+                    .icon,
+                    .reward {
+                        min-height: 225px;
+                        display: table-cell;
+                        vertical-align: middle;
+                    }
+
+                    header {
+
+                        h1 {
+                            color: #fff;
+                            font-size: 5.8em;
+                            letter-spacing: -6px;
+                            line-height: 0.75;
+                            text-align: left;
+                            text-transform: uppercase;
+                            font-family: $font-light;
+                            font-weight: 300;
+
+                            span {
+                                font-size: 1em;
+                                line-height: 1.1;
+
+                                i {
+                                    text-transform: none;
+                                }
+                            }
+                        }
+
+                        p {
+                            color: $blue;
+                            text-align: left;
+                            margin-top: 0.3em;
+                            margin-bottom: 1.4em;
+                            font-size: 1.221em;
+                        }
+                    }
+
+                    .reward-header {
+                        h1 {
+                            line-height: 1.05;
+                            margin-bottom: 0.3em;
+                            text-align: center;
+
+                            i {
+                                text-transform: none;
+                            }
+
+                        }
+                    }
+
+                    .reward {
+                        text-align: center;
+                        font-size: 5em;
+                        line-height: 1.1;
+                        color: $blue;
+
+                        p {
+                            top: 0.5em;
+                            position: relative;
+                            letter-spacing: -4px;
+                        }
+                    }
+
+                    .row.form-cont {
+                        background: #fff;
+                        padding-top: 3.5em;
+
+                        form {
+                            padding-left: 28px;
+                            padding-right: 0;
+
+                             input.form-control {
+                                color: $gray;
+                                border: 2px solid $gray;
+                                border-radius: 0;
+                                box-shadow: none;
+                                height: auto;
+                                padding: 5px 12px;
+                                line-height: 2;
+                            }
+
+                            label {
+                                font-size: 18px;
+                                text-align: center;
+                                color: $orange2;
+                                margin: 0 auto 0.2em;
+                                display: block;
+                            }
+
+                            .one .code {
+                                padding-right: 1em;
+                            }
+
+                            .one,
+                            .two {
+                                min-width: 524px;
+                            }
+
+                            .two > div  {
+                                padding: 0;
+                                padding-right: 1em;
+                                padding-top: 0.5em;
+                                margin-bottom: 28px;
+
+                                &:last-child {
+                                    padding-right: 0;
+                                }
+                            }
+                        }
+
+                        .icon {
+                            position: relative;
+                            padding-left: 30px;
+                            padding-right: 21px;
+
+                            img {
+                                top: 7px;
+                                position: relative;
+                                width: 100%;
+                                max-width: 143px;
+                            }
+                        }
+
+                        .footer {
+                            display: table-cell;
+                            width: 100%;
+                            height: 90px;
+                            background: $gray2;
+                            font-family: $font-med;
+                            display: block;
+                            vertical-align: middle;
+                            padding: 1.5em 2.6em;
+                            line-height: 1.4;
+                            min-height: 92px;
+
+                            p {
+                                color: $orange2;
+                                letter-spacing: 0.2px;
+                            }
+                        }
+                    }
+
+                    button {
+                        border-radius: 0;
+                        background: $orange2;
+                        color: #fff;
+                        float: left;
+                        letter-spacing: 1px;
+                        margin-right: 2em;
+                        margin-bottom: 1em;
+                        padding: 10px 24px;
+                        @include transition(background 0.2s linear);
+
+                        &:hover {
+                            background: darken($orange2, 10%);
+                        }
+                    }
+
+                    .arch-text {
+                        //position: absolute;
+                        text-align: center;
+                        display: block;
+                        //transform: rotate(-13deg);
+                        position: relative;
+                        top: -65px;
+                        left: -4%;
+                        transform: rotate(-15deg);
+                        font-weight: 800;
+
+                        &:hover {
+                            background: none;
+                            
+                            span {
+                                color: darken($blue, 20%);
+                                background: none;
+                            }
+                          }
+                    }
+
+                    .arch-text span {
+                          font-family: $font-med;
+                          color: $blue;
+                          font-size: 18px;
+                          height: 90px;
+                          position: absolute;
+                          width: 10px;
+                          left: 50%;
+                          top: 100%;
+                          text-align: center;
+                          transform-origin: top center;
+                          display: flex;
+                          align-items: flex-end;
+                    }
+
+                    .char1 {
+                        transform: rotate(40deg);
+                     // transform: rotate(6deg);
+                    }
+
+                    .char2 {
+                        transform: rotate(32deg);
+                      //transform: rotate(12deg);
+                    }
+
+                    .char3 {
+                        transform: rotate(28deg);
+                     // transform: rotate(18deg);
+                    }
+
+                    .char4 {
+                        transform: rotate(25deg);
+                      //transform: rotate(24deg);
+                    }
+
+                    .char5 {
+                        transform: rotate(19deg);
+                      //transform: rotate(30deg);
+                    }
+
+                    .char6 {
+                      //transform: rotate(36deg);
+                      transform: rotate(10deg);
+                    }
+
+                    .char7 {
+                        transform: rotate(10deg);
+                      //transform: rotate(42deg);
+                    }
+
+                    .char8 {
+                        transform: rotate(1deg);
+                      //transform: rotate(48deg);
+                    }
+
+                    .char9 {
+                        transform: rotate(-5.5deg);
+                      //transform: rotate(54deg);
+                    }
+
+                    .char10 {
+                        transform: rotate(-11deg);
+                     // transform: rotate(60deg);
+                    }
+
+                   
+                }
+
+                #shop {
+                    .icon {
+                        padding-right: 0;
+                        padding-left: 50px;
+                    }
+
+                    .form-cont {
+                        padding-top: 5.5em;
+                    }
+                }
+        }
+    }
+
+	footer {
+        background: $gray3;
+        padding: 72px 0 92px;
+
+        .row {
+            margin: 0 auto;
+            max-width: 745px;
+
+             & > div:last-child {
+                padding: 0;
+
+                img {
+                    float: right;
+                }
+             }
+        }
+
+    	.bottom {
+            color: #fff;
+    		font-family: $font-med;
+            padding: 0;
+
+    		p {
+    			line-height: 1.6;
+    		}
+
+    		ul {
+    			margin-top: 2.2em;
+
+    			li {
+    				display: inline-block;
+    				float: left;
+                    line-height: 1;
+    				padding: 0 0.6em;
+    				border-right: 1px solid #fff;
+
+    				&:last-child {
+    					border: none;
+    				}
+
+    				&:first-child {
+    					padding-left: 0;
+    				}
+    			}
+    		}
+    	}
+
+    	a {
+    		color: #fff;
+    	}
+    }
+
+
+}
+
